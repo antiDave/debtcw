@@ -326,7 +326,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
       <div class="container mt-5">
-          <div class="card placecard">
+          <div class="card placecard mb-5">
               <div class="card-body">
                   <h3 class="card-title text-center">Get Started Now</h3>
                   <p class="card-text text-center">
@@ -340,47 +340,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   <?php endif; ?>
                   <form action="place_a_claim.php" method="POST">
                       <!-- Form fields -->
-                      <div class="form-row">
-                          <div class="form-group col-md-6">
-                              <label for="firstName">Name</label>
+                      <div class="row">
+                          <div class="form-group col-md-6 mb-2">
+                              <label for="firstName">First Name</label>
                               <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
                           </div>
-                          <div class="form-group col-md-6">
-                              <label for="lastName">&nbsp;</label>
+                          <div class="form-group col-md-6 mb-2">
+                              <label for="lastName">Last Name</label>
                               <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
                           </div>
-                          <div class="form-group col-md-12">
+                          <div class="form-group col-md-12  mb-2">
                               <label for="company">Company</label>
                               <input type="text" class="form-control" id="company" name="company" placeholder="Type in N/A if you are not a company">
                           </div>
                       </div>
-                      <div class="form-group">
+                      <div class="form-group  mb-2">
                           <label for="address">Address</label>
                           <input type="text" class="form-control" id="address" name="address" placeholder="Street Address">
                       </div>
-                      <div class="form-group">
+                      <div class="form-group  mb-2">
                           <input type="text" class="form-control" id="address2" name="address2" placeholder="Street Address Line 2">
                       </div>
-                      <div class="form-row">
-                          <div class="form-group col-md-4">
+                      <div class="row">
+                          <div class="form-group col-md-4  mb-2">
                               <label for="city">City</label>
                               <input type="text" class="form-control" id="city" name="city">
                           </div>
-                          <div class="form-group col-md-4">
+                          <div class="form-group col-md-4  mb-2">
                               <label for="state">State / Province</label>
                               <input type="text" class="form-control" id="state" name="state">
                           </div>
-                          <div class="form-group col-md-4">
+                          <div class="form-group col-md-4  mb-2">
                               <label for="zip">Postal / Zip Code</label>
                               <input type="text" class="form-control" id="zip" name="zip">
                           </div>
                       </div>
-                      <div class="form-row">
-                          <div class="form-group col-md-6">
+                      <div class="row">
+                          <div class="form-group col-md-6  mb-2">
                               <label for="email">Email</label>
                               <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com">
                           </div>
-                          <div class="form-group col-md-6">
+                          <div class="form-group col-md-6  mb-2">
                               <label for="phone">Phone Number</label>
                               <input type="tel" class="form-control" id="phone" name="phone" placeholder="(000) 000-0000">
                           </div>

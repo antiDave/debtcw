@@ -3171,11 +3171,12 @@ textarea.form-control-lg {
   left: auto /* rtl:ignore */; }
 
 
-  @media (max-width:860px) {
+  @media (max-width:767px) {
     .phone-1{
       display:none;
     }
-    }
+  }
+
 
 @media (min-width: 576px) {
   .dropdown-menu-sm-start {
@@ -6263,6 +6264,25 @@ textarea.form-control-lg {
   position: relative;
   font-weight: bolder;
 }
+@media only screen and (max-width:991px){
+  .phone-1{
+    width: fit-content;
+    left: 30px;
+  }
+  
+}
+@media only screen and (max-width:1199px){
+  .ftco-navbar-light .navbar-brand{
+    width: 300px;
+  }
+  .ftco-navbar-light .navbar-brand img{
+    width: -webkit-fill-available;
+    object-fit: contain;
+  }
+}
+
+
+
 .mb-1 {
   margin-bottom: 0.25rem !important; }
 
@@ -10641,6 +10661,7 @@ input[type="checkbox"] {
   
 
 .form-group.form-check{
+  display: flex;
   padding-top: 10px;
 }
 .form-group.form-check input.form-check-input{
@@ -10657,6 +10678,9 @@ input[type="checkbox"] {
 }
 .placecard .btn.btn-primary{
   margin-top: 20px;
+}
+.form-group.form-check input.form-check-input{
+  flex: none;
 }
 
 @media (max-width: 767.98px) {
@@ -10678,3 +10702,50 @@ input[type="checkbox"] {
     margin: 0px 25px;
   }
 }
+
+
+@media (max-width: 767px){
+  .ftco-navbar-light .navbar-brand{
+    width: 220px;
+  }
+  .ftco-navbar-light .navbar-brand img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .main-content{
+    width: 100%;
+    justify-content: center;
+    top: -240px;
+  }
+  .main-content .contact-form{
+    margin-right: 0;
+    left: 0;
+  }
+  .slider-hero .work .img{
+    height: auto;
+    padding: 120px 0px 120px;
+  }
+  .contact-form input, .contact-form select, .contact-form textarea{
+    width: 100%;
+  }
+  .ftco-section.ftco-image.img{
+    background-position: right;
+  }
+  #services a p button{
+    left: 0% !important;
+    margin-left: 15px;
+  }
+  .card.placecard{
+    width: 100%;
+    left: 0;
+    margin: 0;
+  }
+  .ftco-navbar-light .navbar-nav > .nav-item > .nav-link.active{
+    color: #4f86f9 !important;
+  }
+}
+.ftco-navbar-light .navbar-toggler .fa-bars{
+  color: #323539;
+}
+
