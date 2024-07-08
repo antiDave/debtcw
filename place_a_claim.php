@@ -89,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
           // ---------------------------------------------------------
           // ---------------------------------------------------------
-          if ($_SERVER['HTTP_HOST'] === 'debtcww.com') {
+          if ($_SERVER['HTTP_HOST'] === 'debtcw.com') {
               $agreementsDir = '/var/www/vhosts/debtcw.com/httpdocs/pdfs';
               $pdfPath = '/var/www/vhosts/debtcw.com/httpdocs/pdfs/agreement_' . time() . '.pdf';
           } else {
@@ -119,11 +119,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           // First email
           $mail->setFrom('contact@debtcw.com', 'DebtCW Website Contact');
           $mail->addAddress('paul@debtcw.com');
-          $mail->addAddress('intake@debtcw.com');
+          $mail->addCC('intake@debtcw.com');
+          $mail->addBCC('usamtg@hotmail.com');
           
           $mail->isHTML(true);
           $mail->addAttachment($pdfPath);
-          $mail->Subject = 'New Collection Claim Submission';
+          $mail->Subject = 'New Place a Claim Submission';
           $mail->Body = "
               <h3>New Collection Claim Submission</h3>
               <p><strong>Name:</strong> $firstName $lastName</p>
@@ -131,7 +132,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               <p><strong>Address:</strong> $address $address2, $city, $state, $zip</p>
               <p><strong>Email:</strong> $email</p>
               <p><strong>Phone:</strong> $phone</p>
-              <p><strong>Signature:</strong> $signature</p>
               <p><strong>Terms:</strong> $terms</p>
           ";
 

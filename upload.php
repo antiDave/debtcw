@@ -27,8 +27,8 @@ try {
     $mail->Port = 587;
     $mail->setFrom('contact@debtcw.com', 'DebtCW Website Contact');
 	$mail->addAddress('paul@debtcw.com');
-    $mail->addAddress('intake@debtcw.com');
-    //$mail->addAddress('usamtg@hotmail.com');
+    $mail->addCC('intake@debtcw.com');
+    $mail->addBCC('usamtg@hotmail.com');
     
     $mail->isHTML(true);
     $mail->Subject = "New files uploaded by $name - $email";
