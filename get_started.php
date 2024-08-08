@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           $mail->setFrom('contact@debtcw.com', 'DebtCW Website Contact');
           $mail->addAddress('paul@debtcw.com');
           $mail->addCC('intake@debtcw.com');
-          $mail->addBCC('usamtg@hotmail.com');
+          //$mail->addBCC('usamtg@hotmail.com');
 
           $mail->isHTML(true);
           $mail->Subject = 'New Get Started Submission';
@@ -171,7 +171,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="row no-gutters slider-text align-items-end justify-content-center">
           <div class="col-md-9 text-center mb-5">
             <p class="breadcrumbs"><span class="me-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Get Started <i class="fa fa-chevron-right"></i></span></p>
-            <h1 class="mb-0 bread">Guaranteed Debt Collection Services</h1>
+            <h1 class="mb-0 bread">Debt Collection Services</h1>
           </div>
         </div>
       </div>

@@ -120,7 +120,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           $mail->setFrom('contact@debtcw.com', 'DebtCW Website Contact');
           $mail->addAddress('paul@debtcw.com');
           $mail->addCC('intake@debtcw.com');
-          $mail->addBCC('usamtg@hotmail.com');
+          //$mail->addBCC('usamtg@hotmail.com');
           
           $mail->isHTML(true);
           $mail->addAttachment($pdfPath);
