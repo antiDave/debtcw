@@ -107,7 +107,7 @@ body.navbar-fixed {
 .main-content {
     padding: 20px;
     position: relative;
-    top: -350px;
+    top: -22vh;
     z-index: 1;
     width: 100%;
     margin-bottom: -350px;
@@ -3170,11 +3170,6 @@ textarea.form-control-lg {
   left: auto /* rtl:ignore */; }
 
 
-  @media (max-width:767px) {
-    .phone-1{
-      display:none;
-    }
-  }
 
 
 @media (min-width: 576px) {
@@ -9159,7 +9154,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
     width: 100%; }
     .slider-hero .work .img {
       width: 100%;
-      height: 80vh;
+      height: 100vh;
       min-height: 100%;
       position: relative;
       z-index: 0;
@@ -10747,13 +10742,12 @@ input[type="checkbox"] {
   color: #323539;
 }
 
-  
-  @media (max-width: 646px) {
-    .main-content {
-      width: 100%;
-      margin-top: -40px;
-      margin-bottom: -300px;
-    }
+
+
+@media (max-width: 532px) {
+  .phone-1{
+    display: none;
+  }
 }
 @media (max-width: 486px) {
   .main-content {
@@ -10761,10 +10755,66 @@ input[type="checkbox"] {
       margin-top: -20px;
       margin-bottom: -260px;
   }
+}
   @media (max-width: 330px) {
     .main-content {
         width: 100%;
         margin-top: 20px;
         margin-bottom: -260px;
     }
+}
+
+@media (max-height: 1080px){
+  .main-content {
+    top: -22vh;
+  }
+}
+@media (max-height: 900px){
+  .main-content {
+    top: -26vh;
+  }
+}
+@media (max-height: 800px){
+  .main-content {
+    top: -32vh;
+  }
+}
+  
+@media (max-width: 991px) {
+  .main-content {
+    width: 100%;
+    margin-top: -40px;
+    margin-bottom: -30vh;
+  }
+}
+@media (max-width: 1200px){
+  .main-content{
+    margin-bottom: -40vh;
+  }
+}
+
+
+.responsive_mobile, .responsive_or{
+  display: none;
+}
+@media (max-width: 420px) {
+  .responsive_mobile{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .responsive_mobile p, .responsive_or{
+    color: #ffffff;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+  }
+  .responsive_or p{
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
 }
