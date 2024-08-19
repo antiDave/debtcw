@@ -244,64 +244,93 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="ftco-footer img" style="background-image: url(images/bg_1.jpg);">
+      <div class="overlay"></div>
       <div class="container-xl">
-        <div class="row mb-5">
-          <div class="col-md-4 mb-5">
-            <div class="ftco-footer-widget">
-              <h2 class="ftco-heading-2 logo d-flex"><a href="#"><span>DebtCW</span></a></h2>
-              <p>With Debt Collectors Worldwide there is no fee unless we recover your money. We are committed to efficiently resolving outstanding debts for both consumers and businesses in the US and Canada.</p>
-              <ul class="ftco-footer-social list-unstyled mt-2">
-                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+        <div class="row mb-5 justify-content-between">
+          <div class="col-md-6 col-lg">
+            <div class="ftco-footer-widget mb-4">
+
+              <img src="images/logo.webp-white.png" width="200px" alt="DebtCW Logo White">
+              <ul class="ftco-footer-social mt-4">
+                <li>
+                  <a href="#">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                      <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                    </svg></span>
+                  </a>
+                </li>
                 <li><a href="#"><span class="fa fa-facebook"></span></a></li>
                 <li><a href="#"><span class="fa fa-instagram"></span></a></li>
               </ul>
             </div>
           </div>
-          <div class="col-md-3 mb-5">
-            <div class="ftco-footer-widget">
-              <h2 class="ftco-heading-2">Company</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right me-2"></span>About</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right me-2"></span>News</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Contact</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Careers</a></li>
-              </ul>
+          <div class="col-md-6 col-lg-4">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Navigation</h2>
+              <div class="d-md-flex">
+                <ul class="list-unstyled w-100">
+                  <li><a href="/"><span class="ion ion-ios-arrow-round-forward me-2"></span>Home</a></li>
+                  <li><a href="index.html#about" title="Debt Collectors Worldwide about page."><span class="ion ion-ios-arrow-round-forward me-2"></span>About</a></li>
+                  <li><a href="place_a_claim.php"title="Debt Collectors Worldwide place a claim page."><span class="ion ion-ios-arrow-round-forward me-2"></span>Place a Claim</a></li>
+
+                </ul>
+                <ul class="list-unstyled w-100">
+                  
+                  <li><a href="https://app.simplicitycollect.com/ClientPortalLogin.aspx" target="_blank" title="Debt Collectors Worldwide client login page."><span class="ion ion-ios-arrow-round-forward me-2"></span>Login Client</a></li>
+                  <li><a href="pricing" title="Debt Collectors Worldwide pricing page."><span class="ion ion-ios-arrow-round-forward me-2"></span>Pricing</a></li>
+                  <li><a href="contact.php" title="Debt Collectors Worldwide contact page."><span class="ion ion-ios-arrow-round-forward me-2"></span>Contact</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="col-md-2 mb-5">
-            <div class="ftco-footer-widget">
-              <h2 class="ftco-heading-2">Services</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Marketing Strategy</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Web Development</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Market Research</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right me-2"></span>SEO</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Pay Per Click</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Event Marketing</a></li>
-              </ul>
+          <div class="col-md-6 col-lg">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Recent Posts</h2>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img img rounded" style="background-image: url(images/image_1.jpg);"></a>
+                <div class="text">
+                  <div class="meta">
+                    <div><a href="#"><span class="fa fa-calendar"></span> Jan. 27, 2024</a></div>
+                    <div><a href="#"><span class="fa fa-user"></span> Admin</a></div>
+                  </div>
+                  <h3 class="heading"><a href="blog-single">Debt recovery is a big challenge for business</a></h3>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img img rounded" style="background-image: url(images/image_2.jpg);"></a>
+                <div class="text">
+                  <div class="meta">
+                    <div><a href="#"><span class="fa fa-calendar"></span> February 26, 2024</a></div>
+                    <div><a href="#"><span class="fa fa-user"></span> Admin</a></div>
+                  </div>
+                  <h3 class="heading"><a href="blog-single2">Ready for Regulation F and successful collections</a></h3>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-3 mb-5">
-            <div class="ftco-footer-widget">
-              <h2 class="ftco-heading-2">Resources</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Security</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Global</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Charts</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Privacy</a></li>
-              </ul>
+          <div class="col-md-6 col-lg">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Have a Question?</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><span class="icon fa fa-map marker"></span><span class="text">Windermere, Florida, USA</span></li>
+                  <li><a href="tel:800-783-5744"><span class="icon fa fa-phone"></span><span class="text">+1 800 783 5744</span></a></li>
+                  <li><a href="mailto:contact@debtcw.com"><span class="icon fa fa-paper-plane"></span><span class="text">contact@debtcw.com</span></a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <p class="mb-0">Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved.</p>
+      </div>
+      <div class="container-fluid px-0 py-5 bg-darken">
+          <div class="container-xl">
+              <div class="row">
+              <div class="col-md-12 text-center">
+                <p class="mb-0" style="font-size: 14px;">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Debt Collectors Worldwide, LLC</p>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6 text-md-end">
-            <p class="mb-0">This template is made with <span class="fa fa-heart color-danger" aria-hidden="true"></span> by <a href="https://colorlib.com" target="_blank" rel="noopener noreferrer">Colorlib</a></p>
-          </div>
-        </div>
       </div>
     </footer>
 
